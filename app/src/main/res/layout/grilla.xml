@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lblcodigo"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblcodigo"
+        android:id="@+id/lblnombre"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblnombre"
+        android:id="@+id/lblapellido"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lblapellido"
+        android:id="@+id/LY1"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="170dp"
+            android:id="@+id/btnEliminar"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"/>
+        <Button
+            android:layout_width="170dp"
+            android:id="@+id/btnModificar"
+            android:layout_height="wrap_content"
+            android:text="MODIFICAR"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LY1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linea"
+        android:background="#0CCDD0"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
